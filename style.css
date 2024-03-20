@@ -15,6 +15,7 @@ nav {
   margin: 0;
   padding: 5px;
   text-align: center;
+  position: fixed;
 }
 
 nav img {
@@ -23,7 +24,7 @@ nav img {
 }
 
 .intro {
-  padding: 10px;
+  padding: 50px;
   font-family: sans-serif;
 }
 
@@ -52,6 +53,8 @@ img {
   background-color: #5c7f3b;
   border: 2px solid #4b7d1c;
   box-shadow: 0 0 10px 0px #172d0394;
+  position: sticky;
+  top: 50px
 }
 
 .chat {
@@ -60,35 +63,19 @@ img {
   background-color: #5c7f3b;
   border-radius: 50%;
   padding: 15px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
-/* ---Your code starts here--- */
-
-nav {
-  /* všimni si, že při scrollování obsahem stránky navigace zůstává na vrchu viewportu  */
+figure:nth-child(2n) {
+  position: relative;
+  left: 450px;
 }
 
-main {
-  /* zajisti, aby navigace nepřekrývala obsah. Navigace je vysoká 40px*/
-}
-
-.travel {
-  /* tento div při scrollování neodjede s obsahem, ale přilepí 10px pod navigací (50px od vrchu obsahu) */
-}
-
-.picture {
-  /* je potřeba zajistit, abychom mohli přesunout popisek obrázku do pravého horního rohu obrázku */
-}
 
 .picture-description {
-  /* popisek obrázku se nachází přímo na obrázku, 10px shora a 10px zprava */
-}
-
-.mountains,
-.sea {
-  /* obrázky hor a moře jsou zleva odsunuty o 450px */
-}
-
-.chat {
-  /* malého chatbota na stránce vidíme pořád. Visí vpravo dole, 10px od okrajů */
+  position: relative;
+  bottom: 270px;
+  left: 290px;
 }
